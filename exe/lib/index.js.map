@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/lib/index.ts"],"names":[],"mappings":";;AAAA,iDAA2D;AAAlD,uCAAA,YAAY,CAAA","file":"index.js","sourcesContent":["export { ProxyHandler, IProxyInfo } from './proxy-handler';\r\n"]}

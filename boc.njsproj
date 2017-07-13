@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{744f3471-73e9-4a35-8867-8c6f47572785}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>
+    </StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>.\exe</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot>.\src</TypeScriptSourceRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\lib" />
+    <Folder Include="src\lib\delta\" />
+    <Folder Include="src\lib\server\" />
+    <Folder Include="src\lib\topo-sort\" />
+    <Folder Include="src\test" />
+    <Folder Include="src\test\delta\" />
+    <Folder Include="src\test\mdr-model\" />
+    <Folder Include="src\test\projet-model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\lib\boc-tools.ts" />
+    <TypeScriptCompile Include="src\lib\container.ts" />
+    <TypeScriptCompile Include="src\lib\date.ts" />
+    <TypeScriptCompile Include="src\lib\decorators.ts" />
+    <TypeScriptCompile Include="src\lib\delta\json-patch.ts" />
+    <TypeScriptCompile Include="src\lib\dep-object.ts" />
+    <TypeScriptCompile Include="src\lib\index.ts" />
+    <TypeScriptCompile Include="src\lib\interface.ts" />
+    <TypeScriptCompile Include="src\lib\mapping-def.ts" />
+    <TypeScriptCompile Include="src\lib\mapping.ts" />
+    <TypeScriptCompile Include="src\lib\mem-object-store.ts" />
+    <TypeScriptCompile Include="src\lib\message-router.ts" />
+    <TypeScriptCompile Include="src\lib\message.ts" />
+    <TypeScriptCompile Include="src\lib\model-metadata.ts" />
+    <TypeScriptCompile Include="src\lib\model-object.ts" />
+    <TypeScriptCompile Include="src\lib\object-error.ts" />
+    <TypeScriptCompile Include="src\lib\object-filter.ts" />
+    <TypeScriptCompile Include="src\lib\object-key.ts" />
+    <TypeScriptCompile Include="src\lib\relation.ts" />
+    <TypeScriptCompile Include="src\lib\rule.ts" />
+    <TypeScriptCompile Include="src\lib\server\server.ts" />
+    <TypeScriptCompile Include="src\lib\topo-sort\dep-node.ts" />
+    <TypeScriptCompile Include="src\lib\topo-sort\index.ts" />
+    <TypeScriptCompile Include="src\lib\topo-sort\topo-sorter.ts" />
+    <TypeScriptCompile Include="src\lib\type-adapter.ts" />
+    <TypeScriptCompile Include="src\lib\type.ts" />
+    <TypeScriptCompile Include="src\test\boc.sample.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\boc.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\date.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\debug-test.ts" />
+    <TypeScriptCompile Include="src\test\decorators.sample.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\decorators.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\delta\json-patch.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\mdr-model\EntityAdress.ts" />
+    <TypeScriptCompile Include="src\test\mdr-model\EntityName.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\mdr-model\mdr-projet.spec.ts">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\mdr-model\Projet.ts" />
+    <TypeScriptCompile Include="src\test\mdr-model\Tache.ts" />
+    <TypeScriptCompile Include="src\test\message-router.sample.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\message-router.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\model-metadata.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\object-filter.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\projet-model\projet-data.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\projet-model\projet-rules.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\projet-model\projet.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\projet-model\Projet.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\projet-model\Tache.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\relation.sample.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\relation.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+      <Publish>True</Publish>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\test-data.sample.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\test\topo-sorter.spec.ts" />
+    <TypeScriptCompile Include="src\test\types.spec.ts">
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

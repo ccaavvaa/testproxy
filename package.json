@@ -1,0 +1,51 @@
+{
+  "name": "testproxy",
+  "version": "0.0.1",
+  "description": "testproxy",
+  "license": "MIT",
+  "repository": "",
+  "author": "Catalin",
+  "keywords": [
+    ""
+  ],
+  "files": [
+    "exe"
+  ],
+  "main": "./exe/lib/index.js",
+  "typings": "./exe/lib/index.d.ts",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "http-proxy": "^1.16.2",
+    "javascript-stringify": "latest",
+    "lodash": "latest",
+    "tslib": "latest"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/chai": "latest",
+    "@types/express": "^4.0.36",
+    "@types/lodash": "latest",
+    "@types/mocha": "latest",
+    "@types/node": "6.0.81",
+    "chai": "latest",
+    "del": "latest",
+    "dotbin": "latest",
+    "gulp": "latest",
+    "gulp-help": "latest",
+    "gulp-mocha": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-tslint": "latest",
+    "gulp-typescript": "latest",
+    "merge2": "latest",
+    "source-map-support": "^0.4.15",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
